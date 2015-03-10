@@ -11,19 +11,19 @@ Dave Holland <dave@biff.org.uk>
 
 ## Installation:
 
-1. copy `vcal2text` to somewhere suitable, e.g. `~/bin` (make sure
+* copy `vcal2text` to somewhere suitable, e.g. `~/bin` (make sure
    it's executable: `chmod 755 vcal2text`)
-2. add these lines to your ~/.muttrc file:
+* add these lines to your ~/.muttrc file:
 ```
 alternative_order text/calendar text/enriched text/plain text
 auto_view text/calendar
 ```
-3. add this line to your ~/.mailcap file:
+* add this line to your ~/.mailcap file:
 ```
 text/calendar; ~/bin/vcal2text '%s'; copiousoutput
 ```
-4. install the necessary Perl libraries:
+* install the necessary Perl libraries:
 ```
 sudo apt-get install libdata-ical-perl libtext-autoformat-perl
 ```
-5. enjoy your meeting requests :)
+* enjoy your meeting requests :)
